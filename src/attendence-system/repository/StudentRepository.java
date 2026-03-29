@@ -8,7 +8,7 @@ public class StudentRepository {
     private HashMap<String, Student> students = new HashMap<>();
 
     public void addStudent(Student student) {
-        students.put(student.id, student);
+        students.put(student.getId(), student);
     }
 
     public Student getStudent(String id) {
