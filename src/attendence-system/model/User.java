@@ -2,12 +2,18 @@ package model;
 
 public abstract class User {
     protected String name;
-    protected String id;
+    private String id;
 
     public User(String name, String id) {
         this.name = name;
-        this.id = id;
+        this.setId(id);
     }
 
     public abstract void displayRole();
+    public string getId(){
+        return id;
+    }
+    public void setId(string id){
+        this.id=id;
+    }
 }
